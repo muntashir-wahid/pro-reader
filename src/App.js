@@ -1,13 +1,10 @@
 import React, { Fragment } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./components/Header";
-
-const router = createBrowserRouter([]);
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/routes";
 
 function App() {
   return (
     <Fragment>
-      <Header />
       <RouterProvider router={router} />
     </Fragment>
   );
